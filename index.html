@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factor Tsoft</title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+      <header class="hearder">
+        <img src="img/logotsoft.png" alt="Mi Imagen">
+        <div><br/>
+            <h1> FACTOR TSOFT </h1>
+            <h2> Carga de Casos de Referencia </h2>
+            <h4>Exploración del servicio o proyecto</h4><br>
+        </div>
+      </header>
+      <main>
+        <article>
+          <h3> ¡Hola! Cuando envíe este formulario, el propietario verá su nombre y dirección de correo electrónico.</h3>
+          <hr>
+        </article>
+        <section>
+          <div class="container">
+            <label>Selecciona un cliente:</label>
+              <select id="cliente">
+                <option value="">Selecciona un cliente</option>
+                <!-- Los clientes se consultan a elastic -->
+              </select><br><br>
+            <label>Selecciona un servicio:</label>
+              <select id="servicio">
+                <option value="">Selecciona un servicio</option>
+                <!-- Las opciones de servicio se llenarán dinámicamente según el cliente seleccionado -->
+              </select>
+          </div>        
+        </section><br/>
+        <div class="container">
+            <h3> INFORMACIÓN INTERNA </h3><hr>
+              <div id="datos-container">
+                  <!--mostrar datos del servicio-->
+              </div>
+              <h6>Fuente principal de información: PPM</h6>
+          </div><br>
+      <form id="form1">
+        <label> Nro. ID </label><br/>
+            <!--mostrar datos del servicio-->
+          <input type="text" id="id" disabled/><br/> <!--mostrar datos del servicio-->
+        <br/>
+        <label> Nro. Oportunidad </label><br/>
+          <input type="text" id="oportunidad" disabled/><br/>
+        <br/>
+        <label for="pregunta1"> Estrategia Go To Market </label><br/>
+          <input type="text" id="estrategia" required/><br/>
+        <br/>
+        <label for="pregunta2"> Desafío </label><br/>
+          <input type="text" id="desafio" required/><br/>
+        <br/>
+        <label for="pregunta3"> Solución </label><br/>
+          <input type="text" id="solucion" required/><br/>
+        <br/>
+        <label for="pregunta4"> Resultados Obtenidos </label><br/>
+          <input type="text" id="resultados" required/><br/>
+        <br/>    
+        <label for="pregunta4"> Usuario </label><br/>
+          <input type="text" id="usuario" required/><br/>
+        <br/> 
+        <!-- AGREGADO -->   
+        <h2 class="container"> Estrategias </h2> <br>
+
+        <label for="pregunta5"> ¿Qué tipo de estrategia de abordaje se utilizó?</label><br/>
+          <input type="text" id="abordaje" /><br/>
+        <br/>
+        <label for="pregunta6"> ¿Hemos presentado antecedentes de trabajos anteriores? ¿En el cliente? ¿En otro cliente? ¿Cuál?</label><br/>
+          <input type="text" id="antecedentes"  /><br/>
+        <br/>
+        <label for="pregunta7"> ¿Demostramos valor agregado respecto a otros proveedores? </label><br/>
+          <input type="text" id="valor" /><br/>
+        <br/>
+        <label for="pregunta8"> Se abordó con campañas de marketing? ¿Cuál? </label><br/>
+          <input type="text" id="campañas" /><br/>
+        <br/>
+        <label for="pregunta9"> ¿Planteamos alguna otra iniciativa que no parmeo en esta oportunidad? </label><br/>
+          <input type="text" id="iniciativa" /><br/>
+        <br/>
+        <label for="pregunta10"> Esta iniciativa de valor agregado ¿Surgió del cliente o fue iniciativa propia? </label><br/>
+          <input type="text" id="comentarios" /><br/>
+        <br/>
+        <label for="pregunta11"> ¿Qué equipo participó en el abordaje al cliente/inciativa? (comercial/preventa/gerente/lider/arquitecto/marketing, otro) </label><br/>
+          <input type="text" id="equipo" /><br/>
+        <br/>
+
+        <h2 class="container"> Desafios </h2> <br>
+
+        <label for="pregunta12"> ¿Qué situación en el cliente origina esa necesidad?</label><br/>
+          <input type="text" id="situacion" /><br/>
+        <br/>
+        <label for="pregunta13"> ¿Qué dolores tiene identificados o cuales podemos vislumbrar?</label><br/>
+          <input type="text" id="dolores" n /><br/>
+        <br/>
+        <label for="pregunta14"> ¿Qué requerimiento o necesidad origina esta iniciativa? </label><br/>
+          <input type="text" id="requerimiento" /><br/>
+        <br/>
+        <label for="pregunta15"> ¿Qué solución presentamos y aprobó el cliente? ¿El cliente descarto alguna otra propuesta
+            presentada o planteada por nosotros? </label><br/>
+         <input type="text" id="soluciones" /><br/>
+        <br/>
+        <label for="pregunta16"> ¿Qué beneficio puede aportar nuestra solución a la problemática planteada? </label><br/>
+          <input type="text" id="beneficio" /><br/>
+        <br/>
+        <label for="pregunta17"> ¿Conocemos algún identificador? </label><br/>
+         <input type="text" id="identificador" /><br/>
+        <br>
+
+        <h2 class="container">Resultados</h2><br>
+
+        <label for="pregunta18"> ¿Cuánto contribuyó este proyecto en subsanar sus dolares o necesidades?</label><br/>
+          <input type="text" id="contribucion" /><br/>
+        <br/>
+        <label for="pregunta19"> ¿Se logró cumplir con los objetivos planteados al inicio del proyecto?</label><br/>
+          <input type="text" id="logros"  /><br/>
+        <br/>
+        <label for="pregunta20"> ¿Se ejecutó el proyecto de manera eficiente (miinimizando los riesgos y maximizando los recursos)? </label><br/>
+          <input type="text" id="ejecucion" /><br/>
+        <br/>
+        <label for="pregunta21"> Satisfacción del cliente </label><br/>
+          <input type="text" id="satisfaccion" /><br/>
+        <br/>
+
+        <h2 class="container">Consideraciones</h2><br>
+
+        <label for="pregunta22"> ¿Alguna lección aprendida sobre el proceso comercial o delivery que 
+          pueda resultar interesante documentar?</label><br/>
+          <input type="text" id="leccion" /><br/>
+        <br/>
+        <label for="pregunta23"> ¿Alguna acción que contribuyó a un mejor entendimiento con el cliente
+                  que entedemos puede ser buena práctica para otros servicios similares?</label><br/>
+          <input type="text" id="accion"  /><br/>
+        <br/>
+        <label for="pregunta24"> ¿Alguna condición contractual a tener en cuenta? </label><br/>
+          <input type="text" id="condicion" /><br/>
+        <br/>
+        <!-- <input type="button" value="Enviar" onclick="guardarDatos()()">-->
+        <input type="submit" class="mi-submit" value="Enviar">
+      </form><br/>
+      <a href="estrategia.html">
+         <!-- <button type="button" onclick="guardarDatos()" class="mi-boton"> Siguiente </button>-->
+        </a>
+    </main><br/>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

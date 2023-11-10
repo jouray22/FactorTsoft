@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factor Tsoft</title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/logotsoft.png" alt="Mi Imagen">
+      <div><br/>
+          <h1> FACTOR TSOFT </h1>
+          <h2> Carga de Casos de Referencia </h2>
+          <h4>Exploración del servicio o proyecto</h4><br>
+      </div>
+    </header>
+    <main>
+      <h3> ¡Hola! Cuando envíe este formulario, el propietario verá su nombre y dirección de correo electrónico.</h3>
+      <hr>
+    <section>
+          <div class="container">
+            <label> Clientes: </label>
+            <select id="cliente">
+              <option value="">Selecciona un cliente</option>
+              <!-- Los clientes se consultan a elastic -->
+            </select><br><br>
+
+            <label>Servicios:</label>
+                <select id="servicio">
+                  <option value="">Seleccione un servicio</option>
+                  <!-- Las opciones de servicio se llenarán dinámicamente según el cliente seleccionado -->
+                </select>
+          
+          </div>                  
+        </section>
+        <br>
+        <div class="container">
+          <h3> INFORMACIÓN INTERNA </h3><hr>
+            <div id="datos-container">
+                <!--mostrar datos del servicio-->
+            </div>
+            <h6>Fuente principal de información: PPM</h6>
+        </div> <br>
+     
+      <form id="form1">
+        <label> Nro. ID </label><br/>
+            <!--mostrar datos del servicio-->
+          <input type="text" id="id" disabled/><br/> <!--mostrar datos del servicio-->
+        <br/>
+        <label> Nro. Oportunidad </label><br/>
+          <input type="text" id="oportunidad" disabled/><br/>
+        <br/>
+        <label for="pregunta1"> Estrategia Go To Market </label><br/>
+          <input type="text" id="pregunta1" name="pregunta1" /><br/>
+        <br/>
+          <label for="pregunta2"> Desafio </label><br/>
+        <input type="text" id="pregunta2" name="pregunta2"/><br/>
+        <br/>
+          <label for="pregunta3"> Solución </label><br/>
+        <input type="text" id="pregunta3" name="pregunta3"/><br/>
+        <br/>
+        <label for="pregunta4"> Resultados Obtenidos </label><br/>
+        <input type="text" id="pregunta4" name="pregunta4"/><br/>
+        <br/>
+        <!-- <input type="button" value="Enviar" onclick="guardarDatos()()">-->
+        <input type="submit" class="mi-submit" value="Enviar">
+
+      </form><br/>
+
+    </main><br/>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>
